@@ -6,6 +6,7 @@ import cart from "../assets/Images/cart.gif";
 import {useNavigate} from "react-router-dom";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import NavBar from "../components/NavBar";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -39,6 +40,8 @@ const Cart = () => {
 
   return (
     <div>
+      <NavBar/>
+
       <h3 sx={{ p: 2 }}>All Cart Items</h3>
 
       <div className="cartWrapper">

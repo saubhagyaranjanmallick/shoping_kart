@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(233, 233, 233);
+  background-color: #EEEEEE;
 }
 
 .App-logo {
@@ -44,7 +44,8 @@ img {
   background-color: #fff;
   padding: 0px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 25px;
+  box-shadow: 2px #b9def4;
 }
 .productsWrapper {
   display: grid;
@@ -55,7 +56,7 @@ img {
   border: none;
   outline: none;
   background: #764abc;
-  padding:  10px;
+  padding: 10px;
   color: #fff;
   border-radius: 3px;
   cursor: pointer;
@@ -88,4 +89,44 @@ img {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
+}
+slide-container {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+.search-btn {
+  color: white;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+}
+
+.fa-search {
+  background: black;
+  font-size: 24px;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: rgb(255, 12, 12);
+  font-size: 20px;
+  transition: 0.4s;
+  line-height: 50px;
+  width: 0;
+}
+
+.search-box:hover > .search-input {
+  width: 250px;
+  padding: 0 7px;
 }
